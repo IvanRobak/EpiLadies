@@ -1,4 +1,17 @@
 .menu-toggle {
+  display: inline-block;
   border: none;
   background-color: transparent;
+}
+
+.menu-toggle .icon-close {
+  display: none;
+}
+
+.menu-toggle.is-open .icon-close {
+  display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+  display: none;
 }
