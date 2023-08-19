@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,7 +50,7 @@
         <div class="container">
           <h1 class="hero__title">Лазерна Епіляція</h1>
           <p class="hero_subtitle">Видалення волосся діодним лазером</p>
-          <button class="hero__button">Подзвонити</button>
+          <button class="hero__button" data-modal-open>Подзвонити</button>
         </div>
       </section>
 
@@ -130,6 +127,19 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <h2 class="modal__title">Lorem ipsum.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eius consequuntur corporis
+          vero consequatur minus. Maxime voluptates aliquid, mollitia minus, nostrum, tenetur vel
+          veritatis consequatur aliquam minima reprehenderit natus dolores.
+        </p>
+        <button type="button" class="modal__btn" data-modal-close>Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
