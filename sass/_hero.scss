@@ -1,7 +1,16 @@
 .hero {
-  min-height: 200px;
+  min-height: 186px;
+  max-width: 480px;
+  margin: 0 auto;
 
-  background-image: url(../images/IMAGE\ 2023-08-14\ 14:44:36.jpg);
+  background-image: linear-gradient(rgba(217, 160, 164, 0.2), rgba(217, 160, 164, 0.2)),
+    url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(217, 160, 164, 0.2), rgba(217, 160, 164, 0.2)),
+      url('../images/hero-480@2x.jpg');
+  }
 }

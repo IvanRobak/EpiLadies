@@ -9,8 +9,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -37,7 +41,7 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <svg width="40" height="30" aria-label="перемикач мобільного меню">
               <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
               <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -47,33 +51,74 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <!-- <div class="container">
           <h1 class="hero__title">Лазерна Епіляція</h1>
           <p class="hero_subtitle">Видалення волосся діодним лазером</p>
           <button class="hero__button" data-modal-open>Подзвонити</button>
-        </div>
+        </div> -->
       </section>
 
       <section class="about">
         <div class="container">
-          <h2 class="about__title">Some title</h2>
-          <p class="about__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid soluta minus dicta
-            cupiditate laborum quis officia omnis assumenda sequi eaque inventore harum officiis
-            aperiam, quaerat adipisci quam repellendus nulla veritatis.
+          <h2 class="about__title">Про нас</h2>
+          <p class="about__description">
+            Студія EpiLadies -спеціалізується на видаленні волосся ,і гарантує нашим клієнтам
+            максимальний комфорт та компетентність у остаточному вирішенні дратівливої
+            проблеми,пов’язаних із зростанням небажаного волосся.
           </p>
-        </div>
-        <img class="about__img" src="./images/IMAGE 2023-08-14 21:11:06.jpg" alt="" />
-        <div class="container">
-          <h2 class="about__title">Some title</h2>
           <p class="about__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid soluta minus dicta
-            cupiditate laborum quis officia omnis assumenda sequi eaque inventore harum officiis
-            aperiam, quaerat adipisci quam repellendus nulla veritatis.
+            Ми використовуємо найсучасніше лазерне обладнання та працюємо з максимальною обережністю
+            та точністю ,щоб забезпечити бездоганний естетичний результат та одночасно захистити
+            своє здоров’я .Наш апарат оснащенний унікальним охолоджуючим пристроєм,який допомагає не
+            тільки забеспечити високу результативність,а й зробити процедуру менш болючою.
           </p>
+
+          <img class="about__img" src="./images/about-480@2.jpg" alt="" />
         </div>
       </section>
-
+      <section class="preparation">
+        <div class="container">
+          <h2 class="preparation__title">Підготовка до процедури</h2>
+          <p class="preparation__descr">
+            Дорогі дівчата , в більшості випадків не потрібні ніякі спеціальні дії перед процедурою
+            лазерної епіляції, проте для досягнення максимального ефекту, ми рекомендуємо
+            дотримуватися цих простих правил:
+          </p>
+          <ul class="preparation__list">
+            <li class="preparation__item">
+              відмовтеся від відвідувань пляжу або солярію за 2 тижні до процедури
+            </li>
+            <li class="preparation__item">
+              за 2-4 тижні до початку курсу лазерної епіляції слід перестати висмикувати волосся
+              будь-яким чином (віск, шугаринг, пінцет, механічний епілятор тощо)
+            </li>
+            <li class="preparation__item">
+              за 1 день або в день відвідування салону зброї волосся звичайним верстатом - процедура
+              проводиться виключно на гладку шкіру
+            </li>
+            <li class="preparation__item">
+              безпосередньо перед процедурою очистіть шкіру на ділянках тіла, де буде робитись
+              епіляція – не потрібно використовувати дезодорант, тональний крем тощо.
+            </li>
+          </ul>
+          <p class="preparation__descr">
+            Після процедури епіляції діодним лазером для шкіри жінки потрібен відновлювальний
+            період, тому будь ласка:
+          </p>
+          <ul class="preparation__list">
+            <li class="preparation__item">
+              Утримайтеся від глибокого пілінгу обличчя, якщо процедура була на ньому, зрозуміло
+            </li>
+            <li class="preparation__item">
+              Не застосовуйте процедури епіляції, пов'язані з видаленням волосся з коренем (віск,
+              пінцет, шугаринг або механічний епілятор)
+            </li>
+            <li class="preparation__item">
+              Протягом 2-х тижнів намагайтеся не засмагати на сонці або в соляр
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="contacts">
         <div class="container">
           <address class="contacts__address">
@@ -127,7 +172,7 @@
         </li>
       </ul>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal__title">Lorem ipsum.</h2>
         <p>
