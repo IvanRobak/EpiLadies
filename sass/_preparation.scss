@@ -1,0 +1,33 @@
+.preparation {
+  padding: 25px 0;
+}
+
+.preparation__title {
+  text-align: center;
+  margin-bottom: 15px;
+
+  color: #936f7b;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.preparation__list {
+  padding-left: 27px;
+
+  &:not(last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.preparation__descr {
+  margin-bottom: 11px;
+
+  font-weight: 400;
+  line-height: 133.333%;
+}
+
+.preparation__item {
+  font-size: 12px;
+  font-weight: 200;
+}
