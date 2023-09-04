@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="лазерна епіляція, видалення волосся, процедура лазерної епіляції, переваги лазерної епіляції"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -24,7 +29,9 @@
     <header class="page-header">
       <div class="container">
         <div class="header-wrapper">
-          <a href="#"><img src="./images/logo.svg" alt="логотип" class="logo" /></a>
+          <a href="#"
+            ><img src="./images/logo.svg" alt="логотип" class="logo" width="150" height="55"
+          /></a>
 
           <nav>
             <ul class="nav-list" data-menu id="mobile-menu">
@@ -173,24 +180,48 @@
           </ul>
           <ul class="recommend-cards__list">
             <li class="recommend-cards__item">
-              <img src="./images/recom/rec1.jpg" alt="" class="recommend-cards__img" />
+              <img
+                src="./images/recom/rec1@2.webp"
+                alt=""
+                class="recommend-cards__img"
+                width="220"
+                height="220"
+              />
             </li>
             <li class="recommend-cards__item">
-              <img src="./images/recom/rec2.jpg" alt="" class="recommend-cards__img" />
+              <img
+                src="./images/recom/rec2@2.webp"
+                alt=""
+                class="recommend-cards__img"
+                width="220"
+                height="220"
+              />
             </li>
             <li class="recommend-cards__item">
-              <img src="./images/recom/rec3.jpg" alt="" class="recommend-cards__img" />
+              <img
+                src="./images/recom/rec3@2.webp"
+                alt=""
+                class="recommend-cards__img"
+                width="220"
+                height="220"
+              />
             </li>
             <li class="recommend-cards__item">
-              <img src="./images/recom/rec4.jpg" alt="" class="recommend-cards__img" />
+              <img
+                src="./images/recom/rec4@2.webp"
+                alt=""
+                class="recommend-cards__img"
+                width="220"
+                height="220"
+              />
             </li>
           </ul>
         </div>
       </section>
       <section class="contacts">
         <div class="container">
+          <h3 class="contacts__title">Контакти</h3>
           <address class="contacts__address">
-            <h3 class="contacts__title">Контакти</h3>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <svg class="contacts__icon" width="16" height="16">
@@ -238,12 +269,13 @@
             <div class="iframe__thumb">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10301.047777921889!2d24.0481955!3d49.7999429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae9c1765b9a57%3A0x812b740541a07207!2zRXBpIExhZGllcy0g0YHRgtGD0LTRltGPINC70LDQt9C10YDQvdC-0Zcg0LXQv9GW0LvRj9GG0ZbRlw!5e0!3m2!1suk!2sua!4v1692080249601!5m2!1suk!2sua"
-                width="100%"
-                height="auto"
+                width="450"
+                height="150"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="myFrame"
               ></iframe>
             </div>
           </address>
@@ -252,23 +284,11 @@
     </main>
 
     <footer class="footer">
-      <p>Приєднуйтесь</p>
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="" class="social__link">
-            <svg class="social__icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-viber"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="" class="social__link">
-            <svg class="social__icon" width="20" height="20">
-              <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="footer-thumb">
+          <p>Copyright &copy; 2023</p>
+        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -282,7 +302,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>

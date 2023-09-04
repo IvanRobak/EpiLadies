@@ -27,6 +27,11 @@
   list-style: none;
 }
 
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+
 .contacts__link {
   color: #364f6b;
   font-family: Inter;
