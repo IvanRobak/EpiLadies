@@ -20,6 +20,11 @@
   }
 }
 
+.preparation__item {
+  font-size: 12px;
+  font-weight: 200;
+}
+
 .preparation__descr {
   margin-bottom: 11px;
 
@@ -27,7 +32,12 @@
   line-height: 133.333%;
 }
 
-.preparation__item {
-  font-size: 12px;
-  font-weight: 200;
+.preparation-thumb__img {
+  max-width: 480px;
+  min-height: 564px;
+
+  background-image: linear-gradient(rgba(217, 160, 164, 0.2), rgba(217, 160, 164, 0.2)),
+    url(../images/prep-480@2.jpg);
+  background-size: cover;
+  background-position: center;
 }

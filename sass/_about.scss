@@ -2,7 +2,15 @@
   padding-top: 25px;
   background-color: rgba(217, 160, 164, 0.1);
 }
+.about-thumb__img {
+  max-width: 480px;
+  min-height: 462px;
 
+  background-image: linear-gradient(rgba(217, 160, 164, 0.1), rgba(217, 160, 164, 0.1)),
+    url(../images/about-480@2.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .about__title {
   text-align: center;
   margin-bottom: 15px;

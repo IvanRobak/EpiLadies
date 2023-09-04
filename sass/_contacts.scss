@@ -1,14 +1,37 @@
 .contacts__address {
   font-style: inherit;
-  text-align: center;
+}
+
+.contacts__title {
+  color: #3fc1c9;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-weight: 400;
+
+  margin-bottom: 10px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+
+  margin-bottom: 18px;
+  padding-left: 5px;
+
+  list-style: none;
 }
 
 .contacts__link {
+  color: #364f6b;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 200;
+
   text-decoration: none;
-  color: inherit;
 }
 
-.contacts__number {
-  text-decoration: none;
-  color: inherit;
+.contacts__icon {
+  margin-right: 9px;
 }
