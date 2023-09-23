@@ -14,10 +14,6 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -48,7 +44,7 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg width="40" height="30" aria-label="перемикач мобільного меню">
+            <svg width="35" height="25" aria-label="перемикач мобільного меню">
               <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
               <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -67,6 +63,7 @@
 
       <section class="about">
         <div class="container">
+          <!-- <div class="about-wrapper"> -->
           <h2 class="about__title">Про нас</h2>
           <p class="about__description">
             Студія EpiLadies -спеціалізується на видаленні волосся ,і гарантує нашим клієнтам
@@ -80,11 +77,13 @@
             тільки забеспечити високу результативність,а й зробити процедуру менш болючою.
           </p>
 
-          <div class="about-thumb__img"></div>
+          <!-- </div> -->
         </div>
+        <div class="about-thumb__img"></div>
       </section>
       <section class="preparation">
-        <div class="container">
+        <!-- <div class="container"> -->
+        <div class="preparation__wrapper">
           <h2 class="preparation__title">Підготовка до процедури</h2>
           <p class="preparation__descr">
             Дорогі дівчата , в більшості випадків не потрібні ніякі спеціальні дії перед процедурою
@@ -124,10 +123,9 @@
               Протягом 2-х тижнів намагайтеся не засмагати на сонці або в соляр
             </li>
           </ul>
-          <div class="preparation-thumb__img">
-            <!-- <img src="./images/prep-480@2.jpg" alt="епіляція тіла" class="preparation__img" /> -->
-          </div>
         </div>
+        <!-- </div> -->
+        <div class="preparation-thumb__img"></div>
       </section>
       <section class="recommend">
         <div class="container">
@@ -154,69 +152,73 @@
               зайвого волосся і значно спростить і полегшить вам життя.
             </li>
           </ul>
-          <h2 class="recommend__title">Кому вона протипоказана!</h2>
-          <p class="recommend__descr">
-            Перед записом на процедуру обов'язково ознайомтеся з наведеним списком протипоказань, за
-            яких епіляція лазером не рекомендується або не допускається
-          </p>
-          <ul class="recommend__list">
-            <li class="recommend__item">вагітність та період лактації</li>
-            <li class="recommend__item">справжній фотодерматит</li>
-            <li class="recommend__item">
-              наявність варикозу (2+ ступеня), герпесу, псоріазу або келоїдних рубців у зоні обробки
-            </li>
-            <li class="recommend__item">волосяні родимі плями в зоні обробки</li>
-            <li class="recommend__item">множинні родимки на тілі</li>
-            <li class="recommend__item">розлади згортання (лейкоз) крові</li>
-            <li class="recommend__item">різні форми цукрового діабету</li>
-            <li class="recommend__item">онкологічне захворювання</li>
-            <li class="recommend__item">
-              застосування гормональних та деяких знеболювальних препаратів (потрібна обов'язкова
-              консультація з лікарем)
-            </li>
-            <li class="recommend__item">епілепсія</li>
-            <li class="recommend__item">деякі типи вірусних захворювань</li>
-            <li class="recommend__item">підвищена світлочутливість</li>
-          </ul>
-          <ul class="recommend-cards__list">
-            <li class="recommend-cards__item">
-              <img
-                src="./images/recom/rec1@2.webp"
-                alt=""
-                class="recommend-cards__img"
-                width="220"
-                height="220"
-              />
-            </li>
-            <li class="recommend-cards__item">
-              <img
-                src="./images/recom/rec2@2.webp"
-                alt=""
-                class="recommend-cards__img"
-                width="220"
-                height="220"
-              />
-            </li>
-            <li class="recommend-cards__item">
-              <img
-                src="./images/recom/rec3@2.webp"
-                alt=""
-                class="recommend-cards__img"
-                width="220"
-                height="220"
-              />
-            </li>
-            <li class="recommend-cards__item">
-              <img
-                src="./images/recom/rec4@2.webp"
-                alt=""
-                class="recommend-cards__img"
-                width="220"
-                height="220"
-              />
-            </li>
-          </ul>
         </div>
+      </section>
+      <section class="contr-recomend">
+        <h2 class="recommend__title">Кому вона протипоказана!</h2>
+        <p class="recommend__descr">
+          Перед записом на процедуру обов'язково ознайомтеся з наведеним списком протипоказань, за
+          яких епіляція лазером не рекомендується або не допускається
+        </p>
+        <ul class="recommend__list">
+          <li class="recommend__item">вагітність та період лактації</li>
+          <li class="recommend__item">справжній фотодерматит</li>
+          <li class="recommend__item">
+            наявність варикозу (2+ ступеня), герпесу, псоріазу або келоїдних рубців у зоні обробки
+          </li>
+          <li class="recommend__item">волосяні родимі плями в зоні обробки</li>
+          <li class="recommend__item">множинні родимки на тілі</li>
+          <li class="recommend__item">розлади згортання (лейкоз) крові</li>
+          <li class="recommend__item">різні форми цукрового діабету</li>
+          <li class="recommend__item">онкологічне захворювання</li>
+          <li class="recommend__item">
+            застосування гормональних та деяких знеболювальних препаратів (потрібна обов'язкова
+            консультація з лікарем)
+          </li>
+          <li class="recommend__item">епілепсія</li>
+          <li class="recommend__item">деякі типи вірусних захворювань</li>
+          <li class="recommend__item">підвищена світлочутливість</li>
+        </ul>
+      </section>
+      <section class="cards">
+        <ul class="recommend-cards__list">
+          <li class="recommend-cards__item">
+            <img
+              src="./images/recom/rec1@2.webp"
+              alt=""
+              class="recommend-cards__img"
+              width="220"
+              height="220"
+            />
+          </li>
+          <li class="recommend-cards__item">
+            <img
+              src="./images/recom/rec2@2.webp"
+              alt=""
+              class="recommend-cards__img"
+              width="220"
+              height="220"
+            />
+          </li>
+          <li class="recommend-cards__item">
+            <img
+              src="./images/recom/rec3@2.webp"
+              alt=""
+              class="recommend-cards__img"
+              width="220"
+              height="220"
+            />
+          </li>
+          <li class="recommend-cards__item">
+            <img
+              src="./images/recom/rec4@2.webp"
+              alt=""
+              class="recommend-cards__img"
+              width="220"
+              height="220"
+            />
+          </li>
+        </ul>
       </section>
       <section class="contacts">
         <div class="container">
@@ -267,16 +269,16 @@
               </li>
             </ul>
             <div class="iframe__thumb">
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10301.047777921889!2d24.0481955!3d49.7999429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae9c1765b9a57%3A0x812b740541a07207!2zRXBpIExhZGllcy0g0YHRgtGD0LTRltGPINC70LDQt9C10YDQvdC-0Zcg0LXQv9GW0LvRj9GG0ZbRlw!5e0!3m2!1suk!2sua!4v1692080249601!5m2!1suk!2sua"
-                width="450"
+                width="100%"
                 height="150"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 title="myFrame"
-              ></iframe>
+              ></iframe> -->
             </div>
           </address>
         </div>
@@ -284,11 +286,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-thumb">
-          <p>Copyright &copy; 2023</p>
-        </div>
+      <!-- <div class="container"> -->
+      <div class="footer-thumb">
+        <p>Copyright &copy; 2023</p>
       </div>
+      <!-- </div> -->
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -302,7 +304,7 @@
       </div>
     </div>
 
-    <script defer src="./js/modal.js"></script>
-    <script defer src="./js/menu.js"></script>
+    <!-- <script defer src="./js/modal.js"></script> -->
+    <script type="module" defer src="./js/menu.js"></script>
   </body>
 </html>

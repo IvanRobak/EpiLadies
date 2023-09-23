@@ -3,14 +3,24 @@
   max-width: 480px;
   margin: 0 auto;
 
-  background-image: linear-gradient(rgba(217, 160, 164, 0.2), rgba(217, 160, 164, 0.2)),
-    url(../images/hero.jpg);
+  background-image: url(../images/hero/hero-480.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(217, 160, 164, 0.2), rgba(217, 160, 164, 0.2)),
-      url('../images/hero-480@2x.jpg');
+    background-image: url('../images/hero/hero-480@2.webp');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/hero-768.webp');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero/hero-768@2.webp');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    min-height: 327px;
   }
 }
