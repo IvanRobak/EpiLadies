@@ -6,6 +6,13 @@
   font-style: inherit;
 }
 
+.contacts__wrapper {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts__title {
   color: #3fc1c9;
   font-family: Comfortaa;
@@ -13,6 +20,10 @@
   font-weight: 400;
 
   margin-bottom: 10px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 .contacts__list {
@@ -39,6 +50,9 @@
   font-weight: 200;
 
   text-decoration: none;
+  @media screen and (min-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__icon {
@@ -48,5 +62,12 @@
 }
 
 .contacts__map {
-  max-width: 100%;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 373px;
+    // height: 170px;
+  }
 }
