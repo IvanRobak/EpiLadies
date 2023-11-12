@@ -1,0 +1,34 @@
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 5px;
+}
+td {
+  display: flex;
+  justify-content: space-between;
+}
+
+th {
+  background-color: #f2c8cb;
+  text-align: center;
+}
+
+.price {
+  width: 300px;
+  background-color: white;
+}
+
+.price__title {
+  text-align: center;
+}
+
+.price__title {
+  text-align: center;
+}
+
+.price__pink {
+  background-color: #f9e5e6;
+}

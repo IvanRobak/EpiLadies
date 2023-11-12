@@ -2,9 +2,9 @@
   padding-bottom: 18px;
 }
 
-.contacts__address {
-  font-style: inherit;
-}
+// .contacts__address {
+//   font-style: inherit;
+// }
 
 .contacts__wrapper {
   @media screen and (min-width: 767px) {
@@ -42,7 +42,7 @@
   list-style: none;
 
   @media screen and (min-width: 767px) {
-    gap: 10px;
+    gap: 20px;
   }
 }
 
@@ -79,5 +79,6 @@
   @media screen and (min-width: 767px) {
     width: 373px;
     display: inline-block;
+    // display: block;
   }
 }
