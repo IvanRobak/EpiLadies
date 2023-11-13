@@ -2,6 +2,7 @@
   min-height: 186px;
   max-width: 480px;
   margin: 0 auto;
+  padding-top: 20px;
 
   background-image: url(../images/hero/hero-480.webp);
   background-size: cover;
@@ -23,4 +24,19 @@
     max-width: 768px;
     min-height: 327px;
   }
+}
+
+.hero__title {
+  font-size: 24px;
+  font-family: Comfortaa;
+  font-weight: 100;
+  letter-spacing: -1px;
+
+  margin-left: 11px;
+}
+
+.hero__subtitle {
+  font-size: 11px;
+  font-weight: 100;
+  margin-left: 25px;
 }
