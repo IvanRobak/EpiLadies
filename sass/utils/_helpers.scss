@@ -7,7 +7,7 @@
 }
 .pinked {
   padding: 25px 16px;
-  background-color: #f9edee;
+  // background-color: #f9edee;
 
   margin-left: auto;
   margin-right: auto;
@@ -128,5 +128,6 @@
   &:hover {
     color: #eba7ad;
     background-color: white;
+    border: 1px solid #eba7ad;
   }
 }
