@@ -12,18 +12,13 @@ function onMenuClick() {
   mobileMenu.classList.toggle('is-open');
 }
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   // Отримання посилань у меню
-//   var menuLinks = document.querySelectorAll('#mobile-menu .nav-link');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuLinks = document.querySelectorAll('#mobile-menu .nav-link');
 
-//   // Додавання обробників подій для кожного посилання
-//   menuLinks.forEach(function (link) {
-//     link.addEventListener('click', function () {
-//       // Закриття мобільного меню після кліку
-//       var mobileMenu = document.getElementById('mobile-menu');
-//       // mobileMenu.removeAttribute('data-menu-open');
-//       // console.log(mobileMenu);
-//       mobileMenu.classList.toggle('is-open');
-//     });
-//   });
-// });
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      menuBtn.classList.remove('is-open');
+    });
+  });
+});
