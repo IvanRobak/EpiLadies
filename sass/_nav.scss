@@ -3,7 +3,7 @@
 
   width: 80%;
   height: 80vw;
-  top: 100%;
+  top: 106%;
   left: -16px;
 
   display: flex;
@@ -38,4 +38,23 @@
 
 .nav-contacts {
   margin-top: 50px;
+}
+
+.nav-list__desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-left: 140px;
+  width: 400px;
+  list-style: none;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+.nav-link__desctop {
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
 }
