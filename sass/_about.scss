@@ -8,9 +8,17 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  // @media screen and (min-width: 1024px) {
-  //   width: 1024px;
-  // }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    display: flex;
+    padding-top: 0;
+  }
+}
+
+.about-text {
+  @media screen and (min-width: 1024px) {
+    padding-top: 40px;
+  }
 }
 
 .about-thumb__img {
@@ -36,5 +44,17 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     min-height: 680px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/about/about-1024.webp);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/about-1024@2.webp');
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    min-height: 592px;
   }
 }
