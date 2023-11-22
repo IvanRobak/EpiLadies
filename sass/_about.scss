@@ -35,26 +35,22 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/about/about-768.webp);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/about/about-768@2.webp');
-    }
-  }
-
-  @media screen and (min-width: 768px) {
     max-width: 768px;
     min-height: 680px;
-  }
+    background-image: url(../images/about/about-768.webp);
 
-  @media screen and (min-width: 1024px) {
-    background-image: url(../images/about/about-1024.webp);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/about/about-1024@2.webp');
+      background-image: url('../images/about/about-768@2.webp');
     }
   }
 
   @media screen and (min-width: 1024px) {
     width: 1024px;
     min-height: 592px;
+    background-image: url(../images/about/about-1024.webp);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/about-1024@2.webp');
+    }
   }
 }
