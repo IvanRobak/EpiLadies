@@ -39,3 +39,25 @@ img {
     padding: 0 40px;
   }
 }
+
+.post.section .container {
+  @media screen and (min-width: 1024px) {
+    padding: 0 35px;
+    width: 412px;
+  }
+}
+
+.container.preparation-text {
+  @media screen and (min-width: 1024px) {
+    padding: 0 35px;
+    padding-top: 30px;
+  }
+}
+
+.container-double {
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    width: 1024px;
+  }
+}

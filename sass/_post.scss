@@ -1,0 +1,15 @@
+.post {
+  //   width: 768px;
+  //   background-color: aqua;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {
+  }
+}
+
+.post-wrapper {
+  @media screen and (min-width: 1024px) {
+    width: 352px;
+  }
+}
