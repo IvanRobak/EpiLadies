@@ -1,8 +1,14 @@
 .section {
   padding-top: 25px;
-
+  background-color: white;
+  margin: 0 auto;
+  width: 420px;
   @media screen and (min-width: 768px) {
+    width: 768px;
     padding-top: 35px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
   }
 }
 
