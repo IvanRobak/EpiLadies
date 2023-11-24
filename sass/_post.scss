@@ -1,6 +1,7 @@
 .post {
-  //   width: 768px;
-  //   background-color: aqua;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 25px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }

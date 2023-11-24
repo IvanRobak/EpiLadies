@@ -1,6 +1,9 @@
 .contacts {
   padding-top: 0;
   padding-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    padding: 25px 0;
+  }
 }
 
 .contacts__wrapper {
@@ -41,7 +44,7 @@
 
   list-style: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     gap: 20px;
   }
 }

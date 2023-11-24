@@ -10,6 +10,9 @@
 
 .preparation-text {
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 25px;
+  }
   @media screen and (min-width: 1024px) {
     margin-bottom: 0;
     padding-top: 30px;
@@ -19,7 +22,7 @@
 }
 
 .preparation-thumb__img {
-  max-width: 480px;
+  // max-width: 480px;
   height: 564px;
   margin: 0 auto;
 
