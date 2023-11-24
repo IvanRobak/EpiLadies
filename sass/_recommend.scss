@@ -11,6 +11,9 @@
     padding-top: 35px;
     padding-bottom: 50px;
   }
+  @media screen and (min-width: 1024px) {
+    padding-top: 30px;
+  }
 }
 
 .recommend-wrapper {
@@ -76,12 +79,13 @@
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1024px) {
+    padding-top: 30px;
     padding-bottom: 40px;
   }
 }
 
 .contr-recomend-wrapper {
   @media screen and (min-width: 1024px) {
-    width: 411px;
+    width: 100%;
   }
 }
