@@ -1,8 +1,15 @@
 .footer-thumb {
   padding: 25px 0;
   height: 68px;
+  margin: 0 auto;
 
   text-align: center;
   background-color: #eba7ad;
   color: white;
+  @media screen and (min-width: 767px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+  }
 }

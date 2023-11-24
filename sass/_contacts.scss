@@ -24,6 +24,9 @@
     left: 5px;
     font-size: 24px;
   }
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
 }
 
 .contacts__list {
@@ -57,6 +60,9 @@
   @media screen and (min-width: 767px) {
     font-size: 16px;
   }
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
 }
 
 .contacts__icon {
@@ -75,6 +81,9 @@
   @media screen and (min-width: 767px) {
     width: 373px;
     display: inline-block;
-    // display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 473px;
+    display: inline-block;
   }
 }
