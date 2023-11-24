@@ -6,10 +6,13 @@
   text-align: center;
   background-color: #eba7ad;
   color: white;
+  max-width: 480px;
   @media screen and (min-width: 767px) {
     width: 768px;
+    font-size: 16px;
   }
   @media screen and (min-width: 1024px) {
     width: 1024px;
+    font-size: 18px;
   }
 }
