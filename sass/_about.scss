@@ -9,9 +9,11 @@
     width: 768px;
   }
   @media screen and (min-width: 1024px) {
-    width: 1024px;
     display: flex;
-    padding-top: 0;
+    justify-content: space-around;
+    width: 1024px;
+    height: 592px;
+    padding: 65px 0;
   }
 }
 
@@ -20,26 +22,28 @@
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1024px) {
-    padding-top: 30px;
+    width: 500px;
+    margin: 0;
+    margin-top: 40px;
   }
 }
 
 .about-thumb__img {
-  max-width: 480px;
-  min-height: 462px;
+  height: 562px;
   margin: 0 auto;
 
   background-image: url(../images/about/about-480.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/about-480@2.webp');
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    min-height: 680px;
+    height: 460px;
+    width: 400px;
     background-image: url(../images/about/about-768.webp);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -48,8 +52,8 @@
   }
 
   @media screen and (min-width: 1024px) {
-    width: 1024px;
-    min-height: 592px;
+    width: 400px;
+    height: 462px;
     background-image: url(../images/about/about-1024.webp);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
