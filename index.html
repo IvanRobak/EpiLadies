@@ -21,7 +21,43 @@
     <title>EpiLadies</title>
   </head>
   <body>
-    <header class="page-header section" id="home">
+    <div class="top">
+      <ul class="top__list">
+        <li class="top__item">
+          <a href="tel:+380961111111" class="top__link"
+            ><svg width="16" height="16">
+              <use class="top-icon" href="./images/symbol-defs.svg#icon-phone"></use></svg
+            >+38 096 5180 956</a
+          >
+        </li>
+        <li class="top__item">
+          <a href="#" class="top__link top-link__disabled"
+            ><svg width="16" height="16">
+              <use class="top-icon" href="./images/symbol-defs.svg#icon-clock"></use></svg
+            ><span>Пн-Пт 10:00 - 19:00</span></a
+          >
+        </li>
+      </ul>
+      <div class="top__wrapper-right">
+        <ul class="top__icon-list">
+          <li class="top__icon-item">
+            <a href="#" class="top__icon-link"
+              ><svg width="16" height="16">
+                <use class="top-icon" href="./images/symbol-defs.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="top__icon-item">
+            <a href="#" class="top__icon-link"
+              ><svg width="16" height="16">
+                <use class="top-icon" href="./images/symbol-defs.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <button type="button" class="top__appointment" data-modal-open>Онлайн запис</button>
+        <!-- <a href="#" class="top__appointment">Онлайн запис</a> -->
+      </div>
+    </div>
+    <header class="header section" id="home">
       <div class="container">
         <div class="header-wrapper">
           <a href="#" class="logo"

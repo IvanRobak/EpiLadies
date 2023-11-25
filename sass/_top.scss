@@ -1,0 +1,66 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: #ffe2e2;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+  }
+}
+
+.top__list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.top__link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.top-link__disabled {
+  cursor: auto;
+}
+
+.top__wrapper-right {
+  display: flex;
+  gap: 30px;
+}
+
+.top__icon-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.top__appointment {
+  font-size: 15px;
+  font-weight: 400;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.top-icon {
+  fill: #eba7ad;
+}
