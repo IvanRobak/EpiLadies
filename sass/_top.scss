@@ -8,8 +8,8 @@
   padding: 0 40px;
   background-color: #ffe2e2;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
