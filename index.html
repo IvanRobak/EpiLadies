@@ -85,8 +85,19 @@
               <li class="nav-item_desktop">
                 <a href="/index.html" class="nav-link__desktop-item">Головна</a>
               </li>
-              <li class="nav-item_desktop">
+              <li class="nav-item_desktop" id="services">
                 <a href="#" class="nav-link__desktop-item">Послуги</a>
+                <ul id="submenu" class="submenu">
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link" data-modal-open-price-list
+                      >Лазерна Епіляція</a
+                    >
+                  </li>
+                  <li class="submenu__item"><a href="#" class="submenu__link">Косметологія</a></li>
+                  <li class="submenu__item">
+                    <a href="#" class="submenu__link">Апаратні процедури</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item_desktop">
                 <a href="#contacts" class="nav-link__desktop-item">Контакти</a>
@@ -874,6 +885,7 @@
       </table>
     </div>
 
+    <script defer src="./js/submenu.js"></script>
     <script defer src="./js/price.js"></script>
     <script defer src="./js/modal.js"></script>
     <script defer src="./js/menu.js"></script>
