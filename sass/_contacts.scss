@@ -16,7 +16,7 @@
 
 .contacts__title {
   display: inline-block;
-  color: #3fc1c9;
+  color: $title-green-color;
   font-family: Comfortaa;
   font-size: 18px;
   font-weight: 400;
@@ -72,7 +72,7 @@
 .contacts__icon {
   margin-right: 9px;
 
-  fill: #eba7ad;
+  fill: $brand-dark-color;
 }
 
 .contacts__map {

@@ -1,6 +1,6 @@
 .section {
   padding-top: 25px;
-  background-color: white;
+  background-color: $white-color;
   margin: 0 auto;
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -18,13 +18,13 @@
   text-align: center;
   margin-bottom: 15px;
 
-  color: #fc5185;
+  color: $title-pink-color;
   font-family: Comfortaa, sans-serif;
   font-size: 18px;
   font-weight: 400;
 
   &--dark {
-    color: #4ca599;
+    color: $title-green-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -116,8 +116,8 @@
 
   border: none;
   border-radius: 30px;
-  color: white;
-  background-color: #eba7ad;
+  color: $white-color;
+  background-color: $brand-dark-color;
 
   font-size: 18px;
   font-weight: 500;
@@ -125,8 +125,8 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color: #eba7ad;
-    background-color: white;
-    border: 1px solid #eba7ad;
+    color: $brand-dark-color;
+    background-color: $white-color;
+    border: 1px solid $brand-dark-color;
   }
 }

@@ -4,8 +4,8 @@
   margin: 0 auto;
 
   text-align: center;
-  background-color: #eba7ad;
-  color: white;
+  background-color: $brand-dark-color;
+  color: $white-color;
   max-width: 480px;
   @media screen and (min-width: 767px) {
     max-width: 768px;

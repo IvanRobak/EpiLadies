@@ -25,7 +25,7 @@
   transform: translate(-50%, -50%);
 
   padding: 20px;
-  background-color: white;
+  background-color: $white-color;
   border-radius: 10px;
 
   width: 300px;
@@ -44,7 +44,7 @@
   margin-top: 20px;
 
   text-align: center;
-  color: #eba7ad;
+  color: $brand-dark-color;
   font-weight: 500;
 }
 

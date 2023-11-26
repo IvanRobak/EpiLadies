@@ -6,7 +6,7 @@
   height: 42px;
   margin: 0 auto;
   padding: 0 40px;
-  background-color: #ffe2e2;
+  background-color: $brand-light-color;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -62,5 +62,5 @@
 }
 
 .top-icon {
-  fill: #eba7ad;
+  fill: $brand-dark-color;
 }
