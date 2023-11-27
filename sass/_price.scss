@@ -35,10 +35,13 @@ th {
   text-align: center;
 }
 
-.price__title {
-  text-align: center;
-}
-
 .price__pink {
   background-color: #f9e5e6;
+}
+
+.price__close {
+  position: absolute;
+  top: 7vh;
+  right: calc(50% - 207px);
+  background-color: $white-color;
 }
