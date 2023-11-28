@@ -603,9 +603,23 @@
           </svg>
         </button>
         <h3 class="modal__title">Запис на прийом</h3>
-        <form action="#" class="modal__form">
-          <input type="text" name="name" placeholder="Ваше ім'я" />
-          <input type="number" name="number" placeholder="Ваш номер телефону" />
+        <form action="#" class="modal__form" name="submit-to-google-sheet">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            autocomplete="off"
+            placeholder="Ваш номер телефону"
+            required
+          />
           <button type="submit" class="btn">Надіслати</button>
         </form>
       </div>
@@ -886,6 +900,18 @@
       </div>
     </div>
 
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbz53IuWDN6bv50S5M9BVnVaiIIh6ARny9TDPUD0k4d3fwl4Cu_Q0L2DJNxy9_bfj-dN/exec';
+      const form = document.forms['submit-to-google-sheet'];
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message));
+      });
+    </script>
     <script defer src="./js/submenu.js"></script>
     <script defer src="./js/price.js"></script>
     <script defer src="./js/modal.js"></script>
