@@ -603,7 +603,7 @@
           </svg>
         </button>
         <h3 class="modal__title">Запис на прийом</h3>
-        <form action="#" class="modal__form" name="submit-to-google-sheet">
+        <form action="#" class="modal__form" name="submit-to-google-sheet" id="appointmentForm">
           <input
             type="text"
             name="name"
@@ -622,6 +622,10 @@
           />
           <button type="submit" class="btn">Надіслати</button>
         </form>
+        <div class="success-message is-hidden" id="successMessage">
+          <h2 class="success-message__title">Дякуємо!</h2>
+          <h3 class="success-message__text">Вашу заявку прийнято</h3>
+        </div>
       </div>
     </div>
     <div class="backdrop is-hidden" id="backdrop">
