@@ -73,14 +73,12 @@
 }
 
 .hero-padding {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-    width: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 
-    background-color: $white-color;
-  }
+  background-color: $white-color;
 }

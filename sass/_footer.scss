@@ -1,13 +1,16 @@
-.footer-thumb {
-  padding: 25px 0;
-  height: 68px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
   margin: 0 auto;
 
-  text-align: center;
   background-color: $brand-dark-color;
-  color: $white-color;
   max-width: 480px;
   @media screen and (min-width: 767px) {
+    padding: 40px;
+
     max-width: 768px;
     font-size: 16px;
   }
@@ -15,4 +18,29 @@
     max-width: 1024px;
     font-size: 18px;
   }
+}
+
+.footer__title {
+  font-size: 20px;
+}
+
+.footer__social-list,
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social-link {
+  font-size: 17px;
+  text-decoration: none;
+  color: $black-color;
+}
+
+.footer__copy {
+  font-family: Comfortaa;
+  font-size: 17px;
 }

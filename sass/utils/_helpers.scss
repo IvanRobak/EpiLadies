@@ -20,7 +20,7 @@
 
   color: $title-pink-color;
   font-family: Comfortaa, sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
 
   &--dark {
@@ -37,6 +37,7 @@
 }
 
 .description {
+  font-size: 17px;
   font-weight: 400;
   line-height: 133.333%;
   margin-bottom: 13px;
@@ -50,7 +51,9 @@
 }
 
 .text {
-  font-weight: 100;
+  font-family: 'RobotoLight,Tahoma,Arial,Verdana';
+  color: #525252;
+  font-size: 17px;
   font-weight: 200;
   line-height: 133.333%;
 
@@ -65,6 +68,9 @@
 }
 
 .list {
+  font-family: 'RobotoLight,Tahoma,Arial,Verdana';
+  color: #525252;
+  font-size: 17px;
   padding-left: 27px;
 
   display: flex;
@@ -83,9 +89,6 @@
 }
 
 .item {
-  font-size: 12px;
-  font-weight: 200;
-
   @media screen and (min-width: 768px) {
     font-size: 16px;
     font-weight: 300;
