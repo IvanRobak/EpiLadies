@@ -1,16 +1,14 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  padding: 20px;
+  max-width: 480px;
   margin: 0 auto;
+  padding: 20px;
 
   background-color: $brand-dark-color;
-  max-width: 480px;
-  @media screen and (min-width: 767px) {
-    padding: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
 
+    padding: 40px;
     max-width: 768px;
     font-size: 16px;
   }
@@ -20,12 +18,28 @@
   }
 }
 
+.footer__wrapper-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .footer__title {
   font-size: 20px;
+  font-weight: 400;
 }
 
 .footer__social-list,
-.footer__contacts-list {
+.footer__contacts-list,
+.footer__section {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -34,13 +48,40 @@
   padding: 0;
 }
 
-.footer__social-link {
+.footer__social-list {
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+.footer__social-link,
+.footer__section-link {
   font-size: 17px;
   text-decoration: none;
   color: $black-color;
 }
 
+.footer__contacts-list {
+  font-weight: 200;
+}
+
 .footer__copy {
   font-family: Comfortaa;
   font-size: 17px;
+  font-weight: 200;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 250px;
+}
+
+.footer__btn {
+  color: inherit;
+  background-color: $white-color;
+  width: 140px;
 }
