@@ -41,6 +41,11 @@ img {
   }
 }
 
+.container__white {
+  padding: 30px 0;
+  background-color: $white-color;
+}
+
 .post.section .container {
   @media screen and (min-width: 1024px) {
     padding: 0 35px;
