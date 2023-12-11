@@ -35,6 +35,9 @@
 .footer__title {
   font-size: 20px;
   font-weight: 400;
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
 }
 
 .footer__social-list,
@@ -60,6 +63,9 @@
   font-size: 17px;
   text-decoration: none;
   color: $black-color;
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 }
 
 .footer__contacts-list {
@@ -78,6 +84,9 @@
   gap: 10px;
 
   width: 250px;
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
 }
 
 .footer__btn {
