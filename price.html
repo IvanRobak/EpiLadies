@@ -71,7 +71,7 @@
     <header class="header section" id="home">
       <div class="container">
         <div class="header-wrapper">
-          <a href="#" class="logo"
+          <a href="/index.html" class="logo"
             ><img
               src="./images/logo.svg"
               alt="логотип"
@@ -103,7 +103,7 @@
                 <a href="./price.html" class="nav-link__desktop-item">Ціни</a>
               </li>
               <li class="nav-item_desktop">
-                <a href="#contacts" class="nav-link__desktop-item">Контакти</a>
+                <a href="/index.html#contacts" class="nav-link__desktop-item">Контакти</a>
               </li>
             </ul>
             <ul class="nav-list" data-menu id="mobile-menu">
@@ -113,7 +113,7 @@
               </li>
               <li class="nav-item"><a href="#contacts" class="nav-link">Розташування</a></li>
               <li class="nav-item">
-                <a href="#" class="nav-link nav-link__contact">Контакти</a>
+                <a href="/index.html#contacts" class="nav-link nav-link__contact">Контакти</a>
                 <ul class="contacts__list nav-contacts">
                   <li class="contacts__item">
                     <svg class="contacts__icon" width="16" height="16">
@@ -504,12 +504,63 @@
 
       <div class="footer__wrapper-right">
         <ul class="footer__section">
-          <li><a href="#about" class="footer__section-link">Про нас</a></li>
-          <li><a href="#advantages" class="footer__section-link">Переваги</a></li>
-          <li><a href="#" class="footer__section-link">Ціни</a></li>
+          <li><a href="/index.html" class="footer__section-link">Головна</a></li>
+          <li><a href="/index.html#advantages" class="footer__section-link">Переваги</a></li>
+          <li><a href="/price.html" class="footer__section-link">Ціни</a></li>
         </ul>
         <button type="button" class="btn footer__btn" data-modal-open>Онлайн запис</button>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg width="18" height="18" class="modal__icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Запис на прийом</h3>
+        <form action="#" class="modal__form" name="submit-to-google-sheet" id="appointmentForm">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            autocomplete="off"
+            placeholder="Ваш номер телефону"
+            required
+          />
+          <button type="submit" class="btn">Надіслати</button>
+        </form>
+        <div class="success-message is-hidden" id="successMessage">
+          <h2 class="success-message__title">Дякуємо!</h2>
+          <h3 class="success-message__text">Вашу заявку прийнято</h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbz53IuWDN6bv50S5M9BVnVaiIIh6ARny9TDPUD0k4d3fwl4Cu_Q0L2DJNxy9_bfj-dN/exec';
+      const form = document.forms['submit-to-google-sheet'];
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message));
+      });
+    </script>
+    <script defer src="./js/submenu.js"></script>
+    <!-- <script defer src="./js/price.js"></script> -->
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
