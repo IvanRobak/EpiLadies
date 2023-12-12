@@ -22,6 +22,16 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Roboto:wght@100;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>EpiLadies</title>
   </head>
@@ -183,12 +193,26 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">Лазерна Епіляція</h1>
           <p class="hero__subtitle">Видалення волосся діодним лазером</p>
         </div>
         <div class="hero-padding"></div>
+      </section> -->
+
+      <section class="slick" id="feedback">
+        <div class="slick__list responsive">
+          <div class="slick__item">
+            <div class="slick__box hero">
+              <h1 class="hero__title">Лазерна Епіляція</h1>
+              <p class="hero__subtitle">Видалення волосся діодним лазером</p>
+            </div>
+          </div>
+          <div class="slick__item">
+            <div class="slick__box hero">Fb#1</div>
+          </div>
+        </div>
       </section>
 
       <section class="about section" id="about">
@@ -968,6 +992,14 @@
           .catch(error => console.error('Error!', error.message));
       });
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script defer src="./js/submenu.js"></script>
     <script defer src="./js/price.js"></script>
     <script defer src="./js/modal.js"></script>
